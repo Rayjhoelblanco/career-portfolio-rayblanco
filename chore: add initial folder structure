@@ -1,0 +1,42 @@
+career-portfolio-rayblanco/
+├─ README.md
+├─ 01-profile/
+│  ├─ CV_ES.pdf
+│  ├─ CV_EN.pdf
+│  ├─ bio.md
+│  └─ cover_letters/
+├─ 02-certifications/
+│  ├─ ISTQB/
+│  ├─ Scrum/
+│  └─ otros/
+├─ 03-courses/
+│  ├─ course-log.md
+│  └─ certificates/
+├─ 04-projects/
+│  ├─ qa/
+│  │  ├─ test-cases/
+│  │  │  ├─ template.md
+│  │  │  └─ ejemplos/
+│  │  ├─ bug-reports/
+│  │  ├─ api/
+│  │  │  ├─ postman_collections/
+│  │  │  └─ examples_responses_sinteticas/
+│  │  └─ sql/
+│  └─ case-studies/
+├─ 05-portfolio/
+│  ├─ index.md        # para GitHub Pages
+│  └─ assets/
+├─ 06-interview-prep/
+│  ├─ qa-questions.md
+│  ├─ star-stories.md
+│  └─ elevator-pitches.md
+├─ 07-assets/
+│  ├─ logos_y_badges/
+│  └─ fotos/
+├─ .github/
+│  ├─ workflows/
+│  │  └─ link-check.yml   # valida links del README
+│  └─ ISSUE_TEMPLATE/
+│     └─ bug_report.md
+├─ .gitignore
+└─ LICENSE
