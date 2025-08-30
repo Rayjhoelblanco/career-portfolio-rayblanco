@@ -8,21 +8,20 @@ Mi enfoque está en el **aseguramiento de la calidad end-to-end**: pruebas funci
 
 ## 💼 Experiencia Destacada
 - **MAPFRE Seguros (2022 - Actualidad)**  
-  - Diseño y ejecución de casos de prueba manuales y funcionales.  
-  - Validación de servicios web (API con Postman).  
-  - Manejo de PL/SQL Developer para consultas y validación de datos.  
-  - Estimaciones con método Fibonacci y participación activa en ceremonias Scrum.  
+  - Lideré el diseño y la ejecución de pruebas funcionales end-to-end en proyectos críticos de seguros.  
+  - Optimicé procesos de validación en APIs mediante Postman y Newman, integrándolos en pipelines de CI/CD.  
+  - Fortalecí la trazabilidad de pruebas enlazando evidencias y criterios de aceptación en Jira y Confluence.  
+  - Colaboración activa con equipos multidisciplinarios bajo Scrum, aportando en estimaciones y mejora continua.  
 
 - **DIRECTV (2020 - 2021)**  
-  - Creación de casos de prueba con técnicas de caja negra.  
-  - Gestión de incidencias con herramientas de seguimiento.  
-  - Comunicación efectiva con equipos de desarrollo y stakeholders.  
+  - Diseñé y ejecuté casos de prueba funcionales aplicando técnicas de caja negra y escenarios de regresión.  
+  - Gestioné defectos críticos asegurando comunicación efectiva con equipos de desarrollo y stakeholders.  
+  - Contribuí a la adopción de buenas prácticas de QA, mejorando la eficiencia en la detección temprana de incidencias.  
 
 - **Abbvie (2018 - 2020)**  
-  - Testing de sistemas de gestión laboral y administrativos.  
-  - Validación en bases de datos con SQL Server.  
-  - Elaboración de documentación y evidencias para auditorías.  
-
+  - Realicé pruebas de sistemas administrativos y portales web garantizando estabilidad en entornos de uso intensivo.  
+  - Validé integridad de datos en SQL Server asegurando consistencia en procesos sensibles del negocio.  
+  - Documenté casos de prueba y evidencias con estándares de auditoría, facilitando la aprobación de procesos regulatorios.  
 ---
 
 ## 🛠️ Tecnologías y Herramientas
