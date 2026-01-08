@@ -1,59 +1,128 @@
-# 👋 Hola, soy Ray Blanco — SDET | QA Automation
+# QA Automation Framework – Cypress (E2E) | SauceDemo
 
-[![Build API](https://img.shields.io/github/actions/workflow/status/USER/REPO/ci-api.yml?label=API%20CI)]()
-[![Build UI](https://img.shields.io/github/actions/workflow/status/USER/REPO/ci-ui.yml?label=UI%20CI)]()
-[![k6](https://img.shields.io/github/actions/workflow/status/USER/REPO/k6.yml?label=k6)]()
-[![Coverage](https://img.shields.io/badge/coverage-JaCoCo%20soon-inactive)]()
 
-**Enfoque:** pruebas **API-first**, automatización **UI** para flujos críticos, **contract testing**, **CI/CD** y calidad en microservicios.  
-**Objetivo:** roles **remotos en USD** (QA Automation/SDET). **Inglés B1** (subiendo a B2).
+Framework de automatización E2E desarrollado con **Cypress**, aplicando buenas prácticas reales de QA Automation utilizadas en proyectos **SaaS / e-commerce**.
+
+El objetivo del proyecto es demostrar **criterio técnico**, **estructura escalable** y **decisiones conscientes** según el contexto del sistema bajo prueba.
 
 ---
 
-## 🔧 Tech principal
-Java 17 · JUnit5 · REST-Assured · Selenium · Playwright (learning) · Allure · k6 · OWASP ZAP · Pact · WireMock · Maven · Docker · GitHub Actions · SQL Server
+## Stack Tecnológico
+- Cypress (E2E Testing)
+- JavaScript
+- Page Object Model (POM)
+- Custom Commands (Cypress.Commands)
+- Fixtures para datos de prueba
 
 ---
 
-## 🚀 Proyectos clave (con CI/CD)
-- **API Tests (Java + REST-Assured)** → contratos Pact + WireMock + Allure.  
-  Repo: `https://github.com/USER/api-tests-java`  
-  *Muestra:* validación de schema, contratos consumer/provider, artefactos Allure.
-- **UI Tests (Selenium 4)** → smoke/regresión en SauceDemo, POM, headless/grid.  
-  Repo: `https://github.com/USER/ui-tests-java`
-- **Perf & Sec (k6 + ZAP Baseline)** → smoke/load y escaneo programado.  
-  Repo: `https://github.com/USER/perf-sec`
+## Estructura del Proyecto
 
-> 📸 Evidencias:  
-> ![Allure](assets/allure-suite.png)  ![Actions](assets/actions-pass.png)  ![k6](assets/k6-trend.png)
+```text
+cypress/
+ ├── e2e/
+ │   ├── login.cy.js        # Tests de login por UI
+ │   ├── cart.cy.js         # Tests de carrito
+ │   └── checkout.cy.js     # Flujo E2E completo
+ ├── pages/
+ │   ├── LoginPage.js
+ │   ├── ProductsPage.js
+ │   ├── CartPage.js
+ │   └── CheckoutPage.js
+ ├── fixtures/
+ │   ├── users.json
+ │   └── checkout.json
+ └── support/
+     ├── commands.js        # Custom commands
+     └── e2e.js             # Import global
+
 
 ---
 
-## 🧪 Experiencia (impacto)
-- **Seguros** (MAPFRE / La Caja) — pruebas end-to-end web/APIs en entornos ágiles.  
-  - Definí suites de **regresión API** en pipelines → *↓ defectos en prod / ↑ velocidad de release*.  
-  - Fortalecí **trazabilidad**: HU ↔ casos ↔ evidencia (Confluence/Jira).  
-- **Telco/Finanzas** — validaciones funcionales y de datos (SQL), smoke y aceptación.
+## Estrategia de Login
 
-> *Nota: agrega tus % reales aquí (p.ej. “↓ defectos críticos 30%”, “↑ velocidad regresión 40%”).*
+### Login por UI (`cy.login`)
+Utilizado para:
+- Tests funcionales de login
+- Validaciones de errores
+- Sistemas sin API de autenticación
 
----
+Implementado mediante **Page Object Model**.
 
-## 📂 Portafolio (manual + API + SQL)
-- **Casos de prueba** | **Bugs reports** | **Colecciones Postman** | **Consultas SQL**  
-  *(pon enlaces si son públicos o súbelos a este repo en `/portfolio/`)*
+```js
+cy.login("standard");
 
----
+Login por API (cy.loginByApi) – Patrón Profesional
 
-## 📚 Case Studies (problema → solución → resultado)
-- [01-Contract Testing en microservicios](case-studies/01-contract-testing.md)
-- [02-Regresión API en CI con Allure](case-studies/02-regresion-api-ci.md)
+Incluido para demostrar el patrón utilizado en SaaS reales, donde:
 
----
+El backend expone un endpoint de autenticación
 
-## 📫 Contacto
-- LinkedIn: https://www.linkedin.com/in/rayjhoelblancocasique/
-- Email: ray.blanco@gestionit.com.ar
----
+Se obtiene token o cookie de sesión
+
+Se evita el login por UI en regresión
+
+Nota: SauceDemo no posee una API real de autenticación, por lo que este comando se incluye a nivel demostrativo del patrón, pero no se utiliza en ejecución real del flujo para evitar inestabilidad.
+
+Este enfoque demuestra conocimiento de optimización de suites de regresión en entornos productivos reales.
+
+ Tipos de Tests Implementados
+ Smoke Tests
+
+Login exitoso
+
+Agregar producto al carrito
+
+Eliminar producto del carrito
+
+Validan que el core del negocio esté operativo antes de liberar una versión.
 
 
+End-to-End (E2E)
+
+Login
+
+Agregar producto
+
+Checkout completo
+
+Confirmación de compra
+
+Validan el flujo crítico de compra de punta a punta simulando el comportamiento real del usuario.
+
+Ejecución del Proyecto
+Instalación
+npm install
+
+Abrir Cypress
+npx cypress open
+
+Buenas Prácticas Aplicadas
+
+Separación de responsabilidades (POM)
+
+Datos desacoplados mediante fixtures
+
+Custom commands para reutilización
+
+No uso de cy.wait() hardcodeado
+
+Assertions funcionales (no visuales)
+
+Decisiones técnicas basadas en contexto real
+
+Objetivo del Framework
+
+Este proyecto no busca cubrir todos los casos posibles, sino demostrar:
+
+Capacidad de análisis
+
+Criterio técnico
+
+Diseño mantenible
+
+Enfoque profesional orientado a negocio
+
+👤 Ray Blanco
+QA Analyst / QA Automation
+Enfoque en pruebas funcionales, automatización y calidad en entornos SaaS.
