@@ -1,5 +1,6 @@
 # QA Automation Framework – Cypress (E2E) | SauceDemo
-
+## Automation Frameworks
+Cypress E2E Framework ([link al repo](https://github.com/Rayjhoelblanco/cypress-e2e-framework))
 
 Framework de automatización E2E desarrollado con **Cypress**, aplicando buenas prácticas reales de QA Automation utilizadas en proyectos **SaaS / e-commerce**.
 
